@@ -11,13 +11,6 @@ INSERT INTO facilities (facid, name, membercost, guestcost, initialoutlay, month
 (7, 'Snooker Table', 0, 5, 450, 15),
 (8, 'Pool Table', 0, 5, 400, 15);
 
-
---
--- TOC entry 2201 (class 0 OID 32800)
--- Dependencies: 170
--- Data for Name: members; Type: TABLE DATA; Schema: cd; Owner: -
---
-
 INSERT INTO members (memid, surname, firstname, address, zipcode, telephone, recommendedby, joindate) VALUES
 (0, 'GUEST', 'GUEST', 'GUEST', 0, '(000) 000-0000', NULL, '2012-07-01 00:00:00'),
 (1, 'Smith', 'Darren', '8 Bloomsbury Close, Boston', 4321, '555-555-5555', NULL, '2012-07-02 12:02:05'),
@@ -51,11 +44,6 @@ INSERT INTO members (memid, surname, firstname, address, zipcode, telephone, rec
 (36, 'Crumpet', 'Erica', 'Crimson Road, North Reading', 75655, '(811) 732-4816', 2, '2012-09-22 08:36:38'),
 (37, 'Smith', 'Darren', '3 Funktown, Denzington, Boston', 66796, '(822) 577-3541', NULL, '2012-09-26 18:08:45');
 
---
--- TOC entry 2202 (class 0 OID 32818)
--- Dependencies: 171
--- Data for Name: bookings; Type: TABLE DATA; Schema: cd; Owner: -
---
 
 INSERT INTO bookings (bookid, facid, memid, starttime, slots) VALUES
 (0, 3, 1, '2012-07-03 11:00:00', 2),
